@@ -1,0 +1,3 @@
+username and password are both incorrect -> sign up
+username is correct but password is incorrect -> alert passowrd error
+username and passowrd correct -> show feeds
