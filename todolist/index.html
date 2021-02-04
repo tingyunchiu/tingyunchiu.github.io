@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> To do List</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>	
-
-<body>
-
-<h1>To do List</h1>
-
-<div id = 'intro'>
-<h2>To help you get your work done...</h2>
-<p>You can only add <strong> one</strong> thing to the "Must Done" section.</p>
-<p>So, Pick just pick one !!!</p>
-</div>
-
-<div id = 'must'>
-<h3>Things must be done</h3>  
-<ul>
-     <input id = 'inputM' type="text">
-</ul>
-</div>
-
-
-<div id = 'could'>
-<h3>Things could be done</h3>  
-<ul>
-    <input id = 'inputC' type="text"> 
-    <li> Click here if the work is done! <button type="button">Click here to delete</button></li>   
-</ul>
-</div>
-
-<div id = 'finish'>
-<h3>Congrats: Things were be done!!!</h3>  
-<ul>    
-     
-</ul>
-</div>
-
-
-<script type="text/javascript" src="function.js"></script> 
-
-</body>
+	<head>
+		<title> To do List</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>	
+	<body>
+		<div class='flex-container'>
+			<h1>To do List</h1>
+			<div id = 'intro'>
+				<h2>To help you get your work done...</h2>
+				<p>You can only add <strong> one</strong> thing to the "Must Done" section.</p>
+				<p>So, just pick one !!!</p>
+			</div>
+			<div id = 'must'>
+				<h3>Things must be done</h3>  
+				<ul>
+	     			<input id = 'inputM' type="text">
+				</ul>
+			</div>
+			<div id = 'could'>
+				<h3>Things could be done</h3>  
+				<ul>
+	    			<input id = 'inputC' type="text"> 
+	    			<li> Add some work <button type="button">Click here to delete</button></li>   
+				</ul>
+			</div>
+			<div id = 'finish'>
+				<h3>Congrats: Things were be done!!!</h3>  
+				<ul></ul>
+			</div>
+			<script type="text/javascript" src="function.js"></script> 
+		</div>
+	</body>
 </html>
