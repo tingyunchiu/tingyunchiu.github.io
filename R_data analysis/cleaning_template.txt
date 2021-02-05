@@ -1,0 +1,40 @@
+# R show message
+message(uid)
+
+# working directory to save data, files
+file = paste('D:/your path/', file name, '.xlsx', sep="") 
+# change '.xlsx' to '.csv' or '.rds'
+
+# Data import
+df <- read_xlsx(file, col_names = TRUE, rowNames = TRUE, na="NA") # the first row of data will be used as column names, and the first column of data will be used as row names
+df <- read.csv(file, header = T, row.names = 1) # the first row of data will be used as column names, and the first column of data will be used as row names
+options(stringsAsFactors = F) # to prevent R from converting columns that are detected to be character/strings to be factor variables
+# import RDS file
+df <- readRDS(file)
+
+# import multiple data with same file name in a folder
+# set working directory to the folder that containes all the files you want to import
+wd = 'D:/NHRI/your path/'
+setwd(wd)
+# list all the files in the folder, only file names match the pattern (something.rds in this case) will be included
+temp = list.files(wd, pattern="*.rds")
+# open all the files
+all <- lapply(temp, readRDS)
+
+# check data
+summary(df) # tells you stats report of your variables and if how many missing values in each variables
+# remember to see if your data makes sense, ie. variable x should only be 0,1,2 but you get 3
+
+
+# check missing value
+is.na(b)
+# useful functions
+lapply
+# set value as
+data$Year[100] <- NA
+# if else loop
+if(uid %in% invalid_uids) { next }
+
+  
+
+
