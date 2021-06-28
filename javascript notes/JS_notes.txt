@@ -1,7 +1,0 @@
-Function
-var storeOutcome = function functionName (varA) {your statement;};
-const storeOutcome = (varA) => your statement;
-
-ternary operator
-if (conditionA) {statementA} else if (conditionB){statementB} else {statementC}
-conditionA? statementA:conditionB?statementB:statementC
